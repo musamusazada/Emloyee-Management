@@ -1,0 +1,66 @@
+.employeeCard {
+  padding: 40px;
+  background-color: #ffe8d6;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.employeeCard:hover {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.1) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.1) 0px 30px 60px -30px;
+}
+.employeeCard:hover .delButton {
+  transform: translateX(0);
+  opacity: 1;
+}
+.employeeCard__country {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.employeeCard__profile {
+  padding: 10px;
+  background: #ddbea9;
+  font-size: 1.8rem;
+  gap: 20px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.employeeCard__pImage {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  object-position: center;
+}
+.employeeCard__infoTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.delButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: #ef233c;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.3s;
+}
+.delButton:hover {
+  background: #d90429;
+}
